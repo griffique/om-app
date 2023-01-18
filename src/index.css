@@ -4,10 +4,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("starry-bg.jpg");
-  background-repeat:no-repeat;
-  background-size: 80vh;
-  background-color: #000;
-  background-position: center;
 }
 

@@ -1,0 +1,48 @@
+
+.App-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#bg{
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+}
+
+.brand-name {
+  color: #9191bc;
+  font-weight: bold;
+  opacity: 70%;
+  text-shadow:white 1px 1px;
+}
+
+.try {
+  font-size: 64px;
+  margin: 50px auto 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.welcome {
+  font-size: 96px;
+  font-weight: bold;
+  margin: 5%;
+  text-align: right;
+  z-index: 1;
+}
+
+.welcome-p {
+  font-size: 32px;
+  margin: 0 100px 0px 100px;
+  z-index: 1;
+}
+
+.welcome-p-area {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 50px;
+  z-index: 1;
+}

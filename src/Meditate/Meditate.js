@@ -1,4 +1,4 @@
-import './App.css';
+import './Meditate.css';
 
 function App() {
   return (
