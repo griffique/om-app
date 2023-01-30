@@ -1,0 +1,13 @@
+.Messages {
+    z-index:2;
+}
+
+.message {
+    z-index: 2;
+    position: relative;
+    font-size: 64px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+}

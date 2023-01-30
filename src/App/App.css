@@ -10,7 +10,7 @@
 #bg{
   position: absolute;
   width: 100vw;
-  z-index: 1;
+  z-index: 0;
 }
 
 .brand-name {

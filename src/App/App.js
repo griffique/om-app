@@ -19,7 +19,7 @@ function App() {
           <h2>Try It<br></br><FaArrowDown/></h2>
         </div>
       </header>
-      <Meditate></Meditate>
+      <Meditate />
     </div>
   );
 }

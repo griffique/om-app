@@ -1,0 +1,23 @@
+.Meditate {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index:2;
+}
+
+.meditate-button {
+    
+    margin: 5% auto;
+    position: relative;
+    z-index: 2;
+}
+
+#tap {
+    border: none;
+    border-radius: 50% !important;
+    font-size: 36px;
+    font-weight: bold;
+    height: 265px;
+    width: 265px;
+}
+
