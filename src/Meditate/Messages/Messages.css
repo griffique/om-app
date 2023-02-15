@@ -5,9 +5,10 @@
 .message {
     z-index: 2;
     position: relative;
-    font-size: 64px;
+    font-size: 80px;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-    margin-top: 5%;
+    margin-top: 50px;
     text-align: center;
+    text-shadow: 3px 3px #8080ad;
 }
