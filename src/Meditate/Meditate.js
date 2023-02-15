@@ -4,9 +4,9 @@ import { useState } from 'react';
 import bell from './bell.mp3';
 
 function Meditate() {
-
   
   const messageArr = [
+    "Press play to begin.",
     "Keep it up!",
     "Go with the flow.",
     "In, out. Deep, slow.",
@@ -27,11 +27,13 @@ function Meditate() {
   const audio = new Audio(bell);
 
   const handleClick = () => {
+    audio.pause();
     audio.play();
-    if (messageNo < messageMax) {setMessageNo(messageNo++);
-      console.log(messageArr[messageNo]);}
-    else {setMessageNo(0)
-    console.log(messageNo)} 
+    if (messageNo < messageMax) {
+      setMessageNo(messageNo + 1);
+    }
+    else {setMessageNo(1)
+    } 
   }
 
   let triggerButton = document.getElementById("tap");
@@ -44,7 +46,7 @@ function Meditate() {
   };
   return (
     <div className="Meditate">
-      <Messages message={messageArr[messageNo]} />
+      <Messages message={messageNo} messageArr={messageArr} />
       <div className="meditate-button">
         <button onClick={()=>{handleClick()}} className="button is-white" id="tap">CLICK<br></br>or<br></br>ENTER KEY</button>
       </div>

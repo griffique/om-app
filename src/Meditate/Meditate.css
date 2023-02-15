@@ -6,11 +6,16 @@
 }
 
 .meditate-button {
-    
+    color: #333 !important;
     margin: 5% auto;
     position: relative;
     z-index: 2;
 }
+
+.meditate-button button {
+    color: #333 !important;
+}
+
 
 #tap {
     border: none;
