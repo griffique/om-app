@@ -1,4 +1,23 @@
 
+.App {
+height: 100%;
+position: relative;
+}
+
+#footer {
+  background-color: rgba(0, 0, 0, .8);
+  bottom: 0;
+  color: white;
+  display:flex;
+  font-size: 28px;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  margin: 0 auto !important;
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+}
 
 .App-header {
   min-height: 100vh;

@@ -16,6 +16,7 @@ function App() {
         </div>
       </header>
       <Meditate />
+      <div id="footer"><h2>Designed and Coded by <a href="http://www.quinneringriffin.com" rel="noreferrer" target="_blank">Quinn Griffin</a></h2></div>
     </div>
   );
 }
