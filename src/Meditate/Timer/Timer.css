@@ -1,0 +1,30 @@
+.Timer {
+    position: relative;
+    z-index:2;
+}
+
+.play-button {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.play-button button {
+    color:#bebed5 !important;
+    font-size: 90px !important;
+}
+
+.play-button button:hover {
+    color: #8080ad !important;
+}
+
+.time {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 80px;
+    margin-top: -.5em;
+    position: relative;
+    text-align: center;
+    text-shadow: 3px 3px #8080ad;
+    z-index: 2;
+}

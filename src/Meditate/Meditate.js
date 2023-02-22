@@ -1,5 +1,6 @@
 import './Meditate.css';
 import Messages from './Messages/Messages';
+import Timer from './Timer/Timer';
 import { useState } from 'react';
 import bell from './bell.mp3';
 
@@ -50,6 +51,7 @@ function Meditate() {
       <div className="meditate-button">
         <button onClick={()=>{handleClick()}} className="button is-white" id="tap">CLICK<br></br>or<br></br>ENTER KEY</button>
       </div>
+      <Timer />
     </div>
   );
 }
