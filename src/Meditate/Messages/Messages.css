@@ -12,3 +12,9 @@
     text-align: center;
     text-shadow: 3px 3px #8080ad;
 }
+
+@media only screen and (max-width: 820px) {
+    .message {
+      font-size: 40px;
+    }
+  }

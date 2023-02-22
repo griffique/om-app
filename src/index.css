@@ -9,3 +9,19 @@ body {
 #root {
   height: auto;
 }
+
+.link {
+  color: #8080ad !important;
+}
+
+.link:hover {
+  color: #585888 !important;
+}
+
+.link:visited {
+  color: #6f8c9c !important;
+}
+
+.link:visited:hover {
+  color: #585888 !important;
+}

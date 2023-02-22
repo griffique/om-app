@@ -6,6 +6,7 @@ import bell from './bell.mp3';
 
 function Meditate() {
   
+  
   const messageArr = [
     "Press play to begin.",
     "Keep it up!",
@@ -23,7 +24,14 @@ function Meditate() {
   ]
   
   const messageMax = messageArr.length - 1;
-  let [messageNo, setMessageNo] = useState(0);
+  const [messageNo, setMessageNo] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const [clicks, setClicks] = useState(0);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = (num) => {
+    setModalOpen(!modalOpen);
+}
 
   const audio = new Audio(bell);
 
@@ -34,7 +42,11 @@ function Meditate() {
       setMessageNo(messageNo + 1);
     }
     else {setMessageNo(1)
-    } 
+    }
+    setClicks(clicks + 1); 
+    if (clicks === 6) {
+      toggleModal();
+    }
   }
 
   let triggerButton = document.getElementById("tap");
@@ -49,9 +61,16 @@ function Meditate() {
     <div className="Meditate">
       <Messages message={messageNo} messageArr={messageArr} />
       <div className="meditate-button">
-        <button onClick={()=>{handleClick()}} className="button is-white" id="tap">CLICK<br></br>or<br></br>ENTER KEY</button>
+        <button title= {playing ? null : "Press play to begin."} disabled={!playing} onClick={()=>{handleClick()}} className="button is-white" id="tap" autoFocus>CLICK<br></br>or<br></br>ENTER KEY</button>
       </div>
-      <Timer />
+      <Timer playing={playing} setPlaying={setPlaying} />
+      <div className={`modal modal-monkey-mind ${modalOpen ? 'is-active' : ''}`}>
+          <div className="modal-background"></div>
+            <div className="modal-content">
+              <p className='modal-content'>Your mind is active today, and that's great! Take one breath, then close this window.</p>
+            </div>
+          <button className="modal-close is-large" aria-label="close" onClick={()=>{toggleModal();}}></button>
+        </div>
     </div>
   );
 }
