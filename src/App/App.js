@@ -3,6 +3,15 @@ import Meditate from '../Meditate/Meditate';
 import bg from './starry-bg.jpg';
 
 
+// TO DO:
+
+// timer function including pause. 
+// start and stop bells
+// language mode
+// navbar
+// about
+// blog link (TBA)
+
 function App() {
   return (
     <div className="App">
