@@ -43,6 +43,32 @@
 }
 
 
+#navbarItems, .navbar-start {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+}
+
+a.navbar-item:hover {
+  background-color: none;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #8080ad !important;
+  cursor:pointer;
+}
+
+.nav-link:visited {
+  color: #fff !important;
+}
+
+.nav-link:visited:hover {
+  color: #8080ad !important;
+}
 
 .welcome {
   font-size: 96px;

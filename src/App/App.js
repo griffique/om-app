@@ -2,6 +2,7 @@ import './App.css';
 import Meditate from '../Meditate/Meditate';
 import bg from './starry-bg.jpg';
 import Faqs from '../Faqs/Faqs';
+import Navbar from './Navbar';
 
 // TO DO:
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Navbar />
         <img src={bg} alt="stars" id="bg"></img>
         <h1 className="welcome">WELC<span className="brand-name">OM</span>E.</h1>
         <div className="welcome-p-area">

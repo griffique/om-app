@@ -55,12 +55,16 @@ font-size: 32px;
     .faqs li {
         font-size: 14px;
     }
+    .modal-content {
+        margin: 0 !important;
+        padding: 8px;
+    }
+        
     .modal-title {
         font-size: 32px;
-        }
-        
-        .faq-modal-content {
+    }
+    .faq-modal-content {
         font-size: 18px;
-        }
-        
+    }
+   
 }

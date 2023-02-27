@@ -58,7 +58,7 @@ function Meditate() {
       }
   };
   return (
-    <div className="Meditate">
+    <div className="Meditate" id="meditate">
       <Messages message={messageNo} messageArr={messageArr} />
       <div className="meditate-button">
         <button title= {playing ? null : "Press play to begin."} disabled={!playing} onClick={()=>{handleClick()}} className="button is-white" id="tap" autoFocus>CLICK<br></br>or<br></br>ENTER KEY</button>
