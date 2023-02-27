@@ -6,10 +6,10 @@ import Faqs from '../Faqs/Faqs';
 // TO DO:
 
 // navbar: meditate, FAQs, blog
-// blog link (TBA)
+// add blog link (TBA)
 // voiceovers
 // toggle for message voiceover mute
-// language modes: French, Italian, Spanish, German, Swedish
+// language modes: French, Italian, Spanish, German, Swedish?
 
 //DONE 
 

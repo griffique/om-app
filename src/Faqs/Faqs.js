@@ -28,7 +28,7 @@ const Faqs = () => {
           <h2>FAQs</h2>
           <ul>
             {faqTitles.map((title, num)=>
-            <button key={title} onClick={()=>{toggleModal(num);}} className="button is-ghost link"><li>{title}</li></button>
+            <p key={title} onClick={()=>{toggleModal(num);}} className="link"><li>{title}</li></p>
             )}
           </ul>
         </div>

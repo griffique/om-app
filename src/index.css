@@ -16,6 +16,7 @@ body {
 
 .link:hover {
   color: #585888 !important;
+  cursor:pointer;
 }
 
 .link:visited {
