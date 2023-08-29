@@ -1,6 +1,6 @@
 {
   "name": "om-app",
-  "homepage": "https://quinneringriffin.com/om",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
